@@ -1,8 +1,26 @@
+// hamburger nav menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+
+    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
+
+
+
+
 
 //Portfolio section - Modal
 const portfolioModals = document.querySelectorAll(".porfolio-model");
 const imgCards = document.querySelectorAll(".img-card");
 const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
+
 
 var portfolioModal = function (modalClick) {
     portfolioModals[modalClick].classList.add("active");
@@ -56,64 +74,37 @@ scrollTopBtn.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
 });
 
-//Navigation menu items active on page scroll
-window.addEventListener("scroll", () => {
-    const sections = document.querySelectorAll("section");
-    const scrollY = window.pageYOffset;
 
-    sections.forEach(current => {
-        let sectionHeight = current.offsetHeight;
-        let sectionTop = current.offsetTop - 50;
-        let id = current.getAttribute("id");
-        
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector(".nav-items a[href*=" + id + "]").classList.add("active");
-        }
-        else{
-            document.querySelector(".nav-items a[href*=" + id + "]").classList.remove("active");
-        }
-    });
-});
 
-//Responsive navigation menu toggle
-const menuBtn = document.querySelector(".nav-menu-btn");
-const closeBtn = document.querySelector(".nav-close-btn");
-const navigation = document.querySelector(".navigation");
-const navItems = document.querySelectorAll(".nav-items a");
 
-menuBtn.addEventListener("click", () => {
-    navigation.classList.add("active");
-});
 
-closeBtn.addEventListener("click", () => {
-    navigation.classList.remove("active");
-});
 
-navItems.forEach((navItem) => {
-    navItem.addEventListener("click", () => {
-        navigation.classList.remove("active");
-    });
-});
+
 
 //Scroll reveal animations
 //Common reveal options to create reveal animations
 ScrollReveal({
-    //reset: true,
-    distance: '60px',
-    duration: 2500,
+    reset: true,
+    distance: '80px',
+    duration: 2000,
     delay: 100
 });
 
+
 //Target elements, and specify options to create reveal animations
-ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 100, origin: 'left' });
-ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 100, origin: 'right' });
-ScrollReveal().reveal('.home .info .btn', { delay: 100, origin: 'bottom' });
+ScrollReveal().reveal('.home .info h2', { delay: 200, origin: 'top'});
+ScrollReveal().reveal('.home .info p, .section-title-01, .section-title-02', { delay: 100, origin: 'left' });
+ScrollReveal().reveal('.home .info h3, .about-info .btn, .home-img', { delay: 200, origin: 'right' });
+ScrollReveal().reveal('.btn', { delay: 300, origin: 'bottom' });
 ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 100, origin: 'left', interval: 100 });
-ScrollReveal().reveal('.home-img, .about-img', { delay: 100, origin: 'bottom' });
-ScrollReveal().reveal('.about .description, .contact-right', { delay: 100, origin: 'right' });
-ScrollReveal().reveal('.about .professional-list li', { delay: 100, origin: 'right', interval: 100 });
-ScrollReveal().reveal('.skills-description, .qualification-description, .scroll-down, .client-swiper, .contact-left h2', { delay: 100, origin: 'left' });
-ScrollReveal().reveal('.experience-card, .qualification-card, .education, .portfolio .img-card', { delay: 100, origin: 'bottom', interval: 100 });
-ScrollReveal().reveal('footer .group', { delay: 100, origin: 'top', interval: 100 });
+ScrollReveal().reveal('.about-img', { delay: 300, origin: 'left' });
+ScrollReveal().reveal('.about .description, .contact-right', { delay: 400, origin: 'right' });
+ScrollReveal().reveal('.strength-list li', { delay: 100, origin: 'bottom'});
+ScrollReveal().reveal('.skills-description, .qualification-description, .contact-left h2', { delay: 300, origin: 'left' });
+ScrollReveal().reveal('.experience-card, .qualification-card, .education, .portfolio .img-card', { delay: 400, origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('footer .group, .scroll-down', { delay: 100, origin: 'top', interval: 100 });
+
+
+
 
 

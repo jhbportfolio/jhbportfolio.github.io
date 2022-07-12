@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Byun's Web Portfolio</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -24,36 +24,54 @@
 
     <!--=======Header=======-->
     <header>
-      <div class="nav-bar">
-        <a href="#" class="logo">JB Portfolio</a>
-        <div class="navigation">
-          <div class="nav-items">
-            <div class="nav-close-btn"></div>
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#qualification">Qualification</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+      <nav class="navbar">
+          <a class="logo" href="#home">JB Web Portfolio</a>
+          
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#qualification" class="nav-link">Qualification</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
+              <span class="hamburger-bar"></span>
           </div>
-        </div>
-        <div class="nav-menu-btn"></div>
-      </div>
-    </header>
+          
+      </nav>
+  </header>
+
+
+
 
     <!--=======Home section=======-->
     <section class="home flex-center" id="home">
       <div class="home-container">
         <div class="media-icons">
           <a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank"><i class="fa-brands fa-github link-icon"></i></a>
-          <a href="https://www.youtube.com/channel/UC2QGQ7VeGoE5cRpFOyJRN8w/featured" target="_blank"><i class="fa-brands fa-youtube link-icon"></i></a>
+
         </div>
         <div class="info">
-          <h2><br>Welcome to <br> John Byun's Portfolio</h2>
+          <h2><br><br>Welcome to <br> John Byun's Portfolio</h2>
           <h3>Design & Development</h3>
           <p>This web portfolio was created to show my introduction and skills.<br>
             Enjoy watching it and feel free to contact me if you have any questions.</p>
-          <a href="#contact" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="#contact" class="btn"> <span>Contact Me </span><i class="fas fa-arrow-circle-right"></i></a>
         </div>
         <div class="home-img">
           <img src="images/main-img.png" alt="">
@@ -76,30 +94,30 @@
               <h3>Hi, My name is<br> John (Jong Hwan) Byun</h3>
               <h4><span>My goal</span> is to work related to <span> Web </span> and <span>Mobile Applications </span> such as UX/UI designer, Product Designer, Front End Developer, App Design, and Developer.
                 </h4>
-              <p> I looked into many University courses to achieve my goal. In the meantime, 
-                I decided that Yoobee   would be the best choice.<br>
-                After completing the Diploma in Web and UX Design (level6) course of Yoobee, I think I can achieve my goal. So I create and submit this web portfolio to enter the Diploma in Web and UX Design (level6).<br>
-                I'm attaching my CV, so if you want, please download it and take a look.<br>
-                Thank You.</p>
+              <p> I looked into the courses of many universities to achieve my goal. I think Yoobee's Diploma in Web and UX Design (level 6) course is the best choice for me.
+              I recently got a related certificate to get a job as an UX Designer and Web Developer, so I have basic knowledge and skills related to UX Design and Web Development.<br>
+              I know how important teamwork and time management are while doing various jobs in the past, and I think that is my strength.<br>
+              Also, I studied 3D graphics in South Korea, so there are advantages in video editing and 3D graphics.<br>      
+              </p>
             </div>
             
-            <ul class="professional-list">
+            <ul class="strength-list">
               <li class="list-item">
               <a class="strength"><i class="fa-solid fa-stopwatch"></i></a>
-                <span><br>Time<br>management</span>
+                <span><b><br>Time<br>Management</b></span>
               </li>
 
               <li class="list-item">
                 <a class="strength"><i class="fa-solid fa-user-group"></i></a>
-                  <span><br>Team<br>Work</span>
-                </li>
+                  <span><b><br>Team<br>Work</b></span>
+              </li>
               
               <li class="list-item">
                 <a class="strength"><i class="fa-solid fa-fire-flame-curved"></i></a>
-                <span><br>Work<br>Hard</span>
+                <span><b><br>Work<br>Hard</b></span>
               </li>
             </ul>
-            <a href="pdf/John (Jong Hwan) Byun CV.pdf"  target="_blank" class="btn">Download CV <i class="fas fa-download"></i></a>
+            <a href="pdf/John (JongHwan) Byun Resume.PDF"  target="_blank" class="btn">Download Resume <i class="fas fa-download"></i></a>
           </div>
         </div>
       </div>
@@ -129,7 +147,7 @@
                 <li class="bar">
                   <div class="info">
                     <span>Adobe Xd</span>
-                    <span>60%</span>
+                    <span>70%</span>
                   </div>
                   <div class="line adobe-xd"></div>
                 </li>
@@ -207,15 +225,15 @@
               <ul class="edu-list">
                 <li class="item">
                   <span class="year">2018-2018</span>
-                  <p><span>3D Graphic</span><br>SBS Academy Computer Art (Korea)</p>
+                  <p><span>3D Graphic</span><br>SBS Academy Computer Art (South Korea)</p>
                 </li>
                 <li class="item">
                   <span class="year">2012-2013</span>
-                  <p><span>Motion Graphic</span><br>SBS Academy Computer Art (Korea)</p>
+                  <p><span>Motion Graphic</span><br>SBS Academy Computer Art (South Korea)</p>
                 </li>
                 <li class="item">
                   <span class="year">2011-2011</span>
-                  <p><span>Digital Media</span><br>Natcoll Design Technology (NZ)</p>
+                  <p><span>Digital Media</span><br>Natcoll Design Technology (New Zealand)</p>
                 </li>
               </ul>
             </div>
@@ -223,13 +241,12 @@
               <h4 class="text-underline"><i class="fa-solid fa-award"></i> <label>Certificate</label></h4>
               <ul class="edu-list">
                 <li class="item">
-                  <span class="year">2022-2022</span>
-                  <p><span>HTML, CSS, and Javascript for Web Development</span><br>Cousrea (Johns Hopkins University)<br>
-                    <a href="pdf/Coursera QPNTL63P8D3Q.pdf"  target="_blank" class="view">View </a><i class="fa-solid fa-file-pdf"></i></p>
+                  <span class="year">2022-2022</span><a href="pdf/Coursera - HTML, CSS, and Javascript for Web Developers.pdf"  target="_blank" class="view">View <i class="fa-solid fa-file-pdf"></i></a>
+                  <p><span>HTML, CSS, and Javascript for Web Development</span><br>Johns Hopkins University (Coursera)<br>   
                 </li>
                 <li class="item">
-                  <span class="year">2022-2022</span>
-                  <p><span>UX Design Professional</span><br>Cousrea (Google)</p>
+                  <span class="year">2022-2022</span><a href="pdf/Google UX Design 0.pdf"  target="_blank" class="view">View <i class="fa-solid fa-file-pdf"></i></a>
+                  <p><span>UX Design Professional</span><br>Google (Coursera)</p>
                 </li>
               </ul>
             </div>
@@ -238,15 +255,15 @@
               <ul class="edu-list">
                 <li class="item">
                   <span class="year">2018-2018</span>
-                  <p><span>Reception</span><br>SBS Academy Computer Art (Korea)</p>
+                  <p><span>Reception</span><br>SBS Academy Computer Art (South Korea)</p>
                 </li>
                 <li class="item">
                   <span class="year">2014-2016</span>
-                  <p><span>Banquet hall staff</span><br>Parnell Quality Hotel (NZ)</p>
+                  <p><span>Banquet Staff</span><br>Parnell Quality Hotel (New Zealand)</p>
                 </li>
                 <li class="item">
                   <span class="year">2013-2015</span>
-                  <p><span>Gardener</span><br>Green Gardening (NZ)</p>
+                  <p><span>Gardener</span><br>Green Gardening (New Zealand)</p>
                 </li>
               </ul>
             </div>
@@ -269,92 +286,99 @@
                   <h3>Responsive John Byun's Web Portfolio</h3>
                   <span>View More</span>
                 </div>
-                <img src="images/port-img1.jpg" alt="">
+                <img src="images/jb-portfoilo.png" alt="">
               </div>
               <div class="porfolio-model flex-center">
                 <div class="portfolio-model-body">
                   <i class="fas fa-times portfolio-close-btn"></i>
                   <h3>Responsive John Byun's Web Portfolio</h3>
-                  <img src="images/port-img1.jpg" alt="">
-                  <a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank"><i class="fa-brands fa-github link-icon"></i></a>
-                  <a href="https://www.youtube.com/channel/UC2QGQ7VeGoE5cRpFOyJRN8w/featured" target="_blank"><i class="fa-brands fa-youtube link-icon"></i></a>
+                  <img src="images/jb-portfoilo.png" alt="">
                   <div class="portfolio-info">
-                    <p>Date - 20/04/2022 ~ 30/04/2022 <br> 
-                      Skill - Figma/HTML/CSS/JS<br> 
-                      Type - PC/Tablet/Mobile<br> 
-                      Font - Poppins<br>
-                      Colour - White/Black/Blue/<br>Dark Blue
+                    
+                    <div class="portfolio-links">
+                      <a href="" target="_blank">
+                        <i class="fa fa-window-maximize link-icon"></i>
+                        <P>Website</P></a>
+
+                      <a href="pdf/Google UX Design Certificate - Portfolio Project 1 - Case study slide deck [Template] (1).pdf"  target="_blank" class="portfolio-pdf">
+                        <i class="fa-solid fa-file-pdf link-icon"></i>
+                        <p>Prototype</p>
+                      </a>
+
+                      <a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank">
+                        <i class="fa-brands fa-github link-icon"></i>
+                        <p>GitHub</p>
+                      </a>
+                    </div>
+
+                    <p><b>Date</b> : 04/2022 ~ 04/2022<br> 
+                      <b>Skill</b> : Figma/HTML/CSS/JS<br> 
+                      <b>Type</b> : PC/Tablet/Mobile<br> 
+                      <b>Font</b> : Poppins<br>
+                      <b>Colour</b> : White/Black/Blue/Dark Blue
                     </p>
-                    <p>I designed this web portfolio to be simple and easy to recognize the information.<br>
+                    <p><b>Descriptions</b> <br> 
+                    I designed this web portfolio to be simple and easy to recognize the information.<br>
                     It is also built in responsive websites and light/dark mode, so you can use it anywhere, anytime on any device.
                   </p>                   
                   </div>                 
                 </div>
               </div>
             </div>
+           
             <div class="img-card-container">
               <div class="img-card">
                 <div class="overlay"></div>
                 <div class="info">
-                  <h3>Responsive Movie Website</h3>
+                  <h3>Responsive Healthy Food Delivery Website</h3>
                   <span>View More</span>
                 </div>
-                <img src="images/port-img2.jpg" alt="">
+                <img src="images/Portfolio 1.jpg" alt="">
               </div>
               <div class="porfolio-model flex-center">
                 <div class="portfolio-model-body">
                   <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Responsive Movie Website</h3>
-                  <img src="images/port-img2.jpg" alt="">
-                  <a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank"><i class="fa-brands fa-github link-icon"></i></a>
-                  <a href="https://www.youtube.com/channel/UC2QGQ7VeGoE5cRpFOyJRN8w/featured" target="_blank"><i class="fa-brands fa-youtube link-icon"></i></a>
-                  <p>It is designed to make it easy for customers to enjoy the movie they want with posters, synopsis, and trailers. It's also built as a responsive website and available anytime, anywhere.</p>
+                  <h3>Responsive Healthy Food Delivery Website</h3>
+                  <img src="images/Portfolio 1.jpg" alt="">
+                  <br>
+                  <div class="portfolio-info">
+
+                    <div class="portfolio-links">
+                      <a href="" target="_blank">
+                        <i class="fa fa-window-maximize link-icon"></i>
+                        <P>Website</P></a>
+
+                      <a href="pdf/Google UX Design Certificate - Portfolio Project 1 - Case study slide deck [Template] (1).pdf"  target="_blank" class="portfolio-pdf">
+                        <i class="fa-solid fa-file-pdf link-icon"></i>
+                        <p>Prototype</p>
+                      </a>
+
+                      <a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank">
+                        <i class="fa-brands fa-github link-icon"></i>
+                        <p>GitHub</p>
+                      </a>
+                    </div>
+
+
+                    <p><b>Date</b> : 05/2022 ~ 06/2022 <br> 
+                      <b>Skill</b> : Figma/HTML/CSS/JS<br> 
+                      <b>Type</b> : PC/Tablet/Mobile<br> 
+                      <b>Font</b> : Poppins<br>
+                      <b>Colour</b> : White/Black/Blue/Dark Blue
+                    </p>
+                    <p><b>Descriptions</b> <br> 
+                    I designed this web portfolio to be simple and easy to recognize the information.<br>
+                    It is also built in responsive websites and light/dark mode, so you can use it anywhere, anytime on any device.
+                  </p>                   
+                  </div> 
+                               
                 </div>
               </div>
             </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Responsive Food / Restaurant Website</h3>
-                  <span>View More</span>
-                </div>
-                <img src="images/port-img3.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Responsive Food / Restaurant Website</h3>
-                  <img src="images/port-img3.jpg" alt="">
-                  <a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank"><i class="fa-brands fa-github link-icon"></i></a>
-                  <a href="https://www.youtube.com/channel/UC2QGQ7VeGoE5cRpFOyJRN8w/featured" target="_blank"><i class="fa-brands fa-youtube link-icon"></i></a>
-                  <p>It is designed with a big picture and a readable font so that customers can order comfortably. It's also built as a responsive website and available anytime, anywhere.</p>
-                </div>
-              </div>
-            </div>
-            <div class="img-card-container">
-              <div class="img-card">
-                <div class="overlay"></div>
-                <div class="info">
-                  <h3>Responsive eCommerce Website</h3>
-                  <span>View More</span>
-                </div>
-                <img src="images/port-img4.jpg" alt="">
-              </div>
-              <div class="porfolio-model flex-center">
-                <div class="portfolio-model-body">
-                  <i class="fas fa-times portfolio-close-btn"></i>
-                  <h3>Responsive eCommerce Website</h3>
-                  <img src="images/port-img4.jpg" alt="">
-                  <a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank"><i class="fa-brands fa-github link-icon"></i></a>
-                  <a href="https://www.youtube.com/channel/UC2QGQ7VeGoE5cRpFOyJRN8w/featured" target="_blank"><i class="fa-brands fa-youtube link-icon"></i></a>
-                  <p>It is designed so that customers can easily find the items they want and purchase them easily and quickly. It's also built as a responsive website and available anytime, anywhere.</p>
-                </div>
-              </div>
-            </div>           
           </div>
         </div>
       </div>
+    </section>
 
     
     <!--=======Contact section=======-->
@@ -402,27 +426,26 @@
     <footer>
       <div class="footer-container">
         <div class="about group">
-          <h2>John Byun</h2>
-          <p>Web Portfolio</p>          
+          <h2><a href="#home">John Byun</a></h2>
+          <p><a href="#home">Web Portfolio</a></p>          
         </div>
         <div class="hr"></div>
         <div class="info group">
           <h3>More</h3>
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#qualification">Qualification</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="footerul">
+            <li class="footerli"><a href="#home">Home</a></li>
+            <li class="footerli"><a href="#about">About Me</a></li>
+            <li class="footerli"><a href="#skills">Skills</a></li>
+            <li class="footerli"><a href="#qualification">Qualification</a></li>
+            <li class="footerli"><a href="#portfolio">Portfolio</a></li>
+            <li class="footerli"><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="hr"></div>
         <div class="follow group">
           <h3>Links</h3>
           <ul>
-            <li><a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank"><i class="fa-brands fa-github"></i></a>        
-                <a href="https://www.youtube.com/channel/UC2QGQ7VeGoE5cRpFOyJRN8w/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </li>
+            <li><a href="https://github.com/JBuxuidesign/jbportfolio" target="_blank"><i class="fa-brands fa-github-square"></i></a></li>        
           </ul>
         </div>
       </div>
@@ -431,8 +454,11 @@
       </div>
     </footer>
 
+
+
+
+    
     <!--=======External scripts=======-->
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 
   </body>
